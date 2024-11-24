@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
         <Route path="/all" element={<Read />} />
-        <Route path="/update" element={<Update />} />
+        <Route path="/:id" element={<Update />} />
       </Routes>
     </Router>
   );
