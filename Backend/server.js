@@ -7,6 +7,17 @@ const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 dotenv.config();
 
+
+// resolvig the cors error
+const cors= require("cors");
+app.use(
+    cors({
+      origin: "http://localhost:5173", // Allow only this origin
+    })
+  );
+  
+
+
 // importing the schema
 const User = require("./models/userModels.js")
 
