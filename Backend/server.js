@@ -24,7 +24,7 @@ const User = require("./models/userModels.js")
 // importing routes
 const userRoute = require("./routes/userRoute.js")
 
-// following will convert the data to json in backend
+// following middleware will convert the data to json in backend
 app.use(express.json());
 
 
